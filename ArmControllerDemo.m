@@ -1,0 +1,14 @@
+%hArmController = ArmController(1:5,1);
+hArmController.Home();
+pause(2);
+hArmController.MoveParallelly(distance+[0,20,0], param, 30);
+pause(1);
+hArmController.MoveParallelly(distance, param, 30);
+pause(1);
+hArmController.MoveParallelly(distance+[0,20,0], param, 30);
+pause(1);
+hArmController.Home();
+pause(2);
+hArmController.Pressbutton(4);
+hArmController.Terminate();
+% delete(hGripperController_Left);
